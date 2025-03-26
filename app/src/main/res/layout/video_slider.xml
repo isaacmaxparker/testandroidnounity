@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="colorList" type="com.nuclavis.rospark.ColorList" />
+    </data>
+     <LinearLayout
+        android:id="@+id/btn_registration_container"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile_games_videos_subtitle"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="@dimen/_13sdp" />
+        <ImageView  
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            
+       />
+
+       
+
+    </LinearLayout>
+</layout>

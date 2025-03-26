@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<data>
+    <variable name="colorList" type="com.nuclavis.rospark.ColorList" />
+</data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight=".85"
+    android:elevation="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alert_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_7sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:weightSum="10">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="0dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_12sdp" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="17dp"
+                    android:customImageTint="@{colorList.primaryColor}"
+                    android:src="@drawable/close_x_icon"
+                    android:id="@+id/donation_success_alert_close_button"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/mobile_close_modal"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true" />
+            </LinearLayout>
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/check_circle"
+                android:customImageTint="@{colorList.primaryColor}"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:id="@+id/donation_successful_information"
+                android:accessibilityLiveRegion="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/success_check_amount"
+                    android:layout_width="@dimen/_240sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="$150.00"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_26sdp" />
+                <TextView
+                    android:id="@+id/success_donor_name"
+                    android:layout_width="@dimen/_240sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:textStyle="bold"
+                    android:text="FirstName LastName"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginBottom="15dp"/>
+                <TextView
+                    android:layout_width="@dimen/_240sdp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile_donations_check_deposit_complete"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:customTextColor="@{colorList.primaryColor}"
+                    android:textSize="@dimen/_26sdp" />
+                <TextView
+                        android:text="@string/mobile_alert_close_button"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:accessibilityLiveRegion="1"/>
+            </LinearLayout>
+             <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:weightSum="10">
+                    <Button
+                        android:id="@+id/deposit_success_done_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:customTextColor="@{colorList.buttonTextColor}"
+                        android:customBackgroundTintColor="@{colorList.buttonColor}"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/mobile_donations_check_deposit_complete_button"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

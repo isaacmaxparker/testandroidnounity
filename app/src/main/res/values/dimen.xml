@@ -1,0 +1,4 @@
+ <resources>
+     <dimen name="zero">0dp</dimen>
+     <dimen name="twenty">20dp</dimen>
+ </resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<data>
+    <variable name="colorList" type="com.nuclavis.rospark.ColorList" />
+</data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical">
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@{colorList.isWhite ? @drawable/card_background_white : @drawable/card_background}"
+                android:gravity="center"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_15sdp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/overview_card_title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:padding="0dp"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:accessibilityHeading="true"
+                            android:text="@string/mobile_gifts_spread_the_word_title" />
+                        <LinearLayout
+                            android:id="@+id/gifts_spread_the_word_help_button"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:gravity="top|right"
+                            android:focusable="false"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:gravity="center"
+                                android:layout_marginLeft="-25dp"
+                                android:minWidth="25dp"
+                                android:src="@drawable/help"
+                                android:customImageTint="@{colorList.primaryColor}" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/mobile_gifts_spread_the_word_description"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_11sdp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="10">
+                        <Button
+                            android:id="@+id/btn_spread_the_word"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_weight="9"
+                            android:gravity="center"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/mobile_gifts_spread_the_word_button"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_12sdp"
+                            android:customTextColor="@{colorList.buttonTextColor}"
+                            android:customBackgroundTintColor="@{colorList.buttonColor}" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/gifts_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@{colorList.isWhite ? @drawable/card_background_white : @drawable/card_background}"
+                android:gravity="center"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_15sdp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/overview_card_title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:padding="0dp"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:accessibilityHeading="true"
+                            android:text="@string/mobile_gifts_gifts_title" />
+                        <LinearLayout
+                            android:id="@+id/gifts_gifts_card_help_button"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:gravity="top|right"
+                            android:focusable="false"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:gravity="center"
+                                android:layout_marginLeft="-25dp"
+                                android:minWidth="25dp"
+                                android:src="@drawable/help"
+                                android:customImageTint="@{colorList.primaryColor}" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/gifts_card_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="@dimen/_11sdp" />
+                    <LinearLayout
+                        android:id="@+id/gifts_cards_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="0dp">
+                        
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

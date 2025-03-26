@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+<data>
+    <variable name="colorList" type="com.nuclavis.rospark.ColorList" />
+    <variable name="white" type="String"/>
+</data>
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:layout_weight="1"
+    android:background="@drawable/gift_card_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            style="@style/overview_card_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:customTextColor="@{colorList.buttonColor}"
+            android:text="WRISTBAND"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingRight="10dp"
+            android:text="Registration Compilation"
+            android:textAlignment="center"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="@string/mobile_gifts_gifts_post_event"
+            android:textAlignment="center"
+            android:textSize="@dimen/_10sdp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10200"/>
+        <LinearLayout
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <com.google.android.material.button.MaterialButton
+                app:strokeWidth="5dp"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="9"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:customBackgroundTintColor="@{colorList.isWhite ? colorList.buttonTextColor : white}"
+                android:customStrokeColor="@{colorList.isWhite ? colorList.primaryColor : colorList.buttonTextColor}"
+                android:customTextColor="@{colorList.isWhite ? colorList.primaryColor : colorList.buttonTextColor}"
+                android:gravity="center"
+                app:cornerRadius="5dp"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/mobile_gifts_gifts_view"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</layout>

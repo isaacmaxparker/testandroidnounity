@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<data>
+    <variable name="colorList" type="com.nuclavis.rospark.ColorList" />
+</data>
+<LinearLayout
+    android:id="@+id/overview_event_checkin_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_15sdp"
+    android:background="@{colorList.isWhite ? @drawable/card_background_white : @drawable/card_background}"
+    android:orientation="vertical"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/overview_card_title"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:accessibilityHeading="true"
+            android:text="@string/mobile_overview_event_checkin_title" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/overview_event_barcode_check_in_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/mobile_overview_event_checkin_subtitle_android"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="10">
+            <Button
+                android:id="@+id/event_checkin_get_barcode_btn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/mobile_overview_event_checkin_get_barcode_button"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_12sdp"
+                android:customTextColor="@{colorList.buttonTextColor}"
+                android:customBackgroundTintColor="@{colorList.buttonColor}" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/overview_event_check_in_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/mobile_overview_event_checkin_subtitle_android"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="10">
+            <Button
+                android:id="@+id/event_checkin_btn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/mobile_overview_event_checkin_button"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_12sdp"
+                android:customTextColor="@{colorList.buttonTextColor}"
+                android:customBackgroundTintColor="@{colorList.buttonColor}" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/overview_event_checked_in_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:minWidth="25dp"
+            android:src="@drawable/check_icon"
+            android:customImageTint="@{colorList.primaryColor}"/>
+        <LinearLayout
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_overview_event_checked_in_subtitle_android"
+                android:textColor="#000000"
+                android:textSize="@dimen/_11sdp" />
+            <TextView
+                android:id="@+id/overview_event_checked_in_tshirt_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="@string/mobile_overview_event_checkin_tshirt_subtitle"
+                android:textColor="#000000"
+                android:textSize="@dimen/_11sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</layout>
