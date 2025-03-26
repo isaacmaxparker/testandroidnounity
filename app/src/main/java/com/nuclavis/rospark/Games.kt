@@ -280,7 +280,7 @@ class Games : com.nuclavis.rospark.BaseActivity() {
             scanButton.setOnClickListener {
                 sendGoogleAnalytics(imageName.lowercase() + "_coloring_scan", "games")
                 startArTracking(imageName.lowercase() + "_coloring_scan")
-                loadUnityContent("colouring_page")
+                //loadUnityContent("colouring_page")
             }
 
             textView.text = imageName

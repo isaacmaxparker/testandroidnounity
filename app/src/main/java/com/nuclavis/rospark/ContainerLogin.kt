@@ -227,7 +227,7 @@ class ContainerLogin : BaseLanguageActivity() {
         if(requestCode == 12040){
             if(grantResults[0]==PackageManager.PERMISSION_GRANTED)
             {
-                loadUnityContent("poster")
+                //loadUnityContent("poster")
             }
             else
             {

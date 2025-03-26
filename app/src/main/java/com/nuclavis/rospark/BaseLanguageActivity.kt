@@ -53,7 +53,7 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.nuclavis.rospark.Donations.Match
 import com.nuclavis.rospark.databinding.*
-import com.unity3d.player.UnityPlayerActivity
+//import com.unity3d.player.UnityPlayerActivity
 import dev.b3nedikt.restring.Restring
 import dev.b3nedikt.restring.Restring.wrapContext
 import dev.b3nedikt.reword.Reword.reword
@@ -5949,7 +5949,12 @@ abstract class BaseLanguageActivity : AppCompatActivity() {
             })
         }
     }
-    
+
+    fun loadUnityContent(type: String){
+        
+    }
+
+    /*
     fun loadUnityContent(type: String){
         //BEGIN_UNITY_CONTENT
         val intent = Intent(this, UnityPlayerActivity::class.java)
@@ -5972,6 +5977,7 @@ abstract class BaseLanguageActivity : AppCompatActivity() {
         startActivityForResult(intent, UNITY_CONTENT_REQUEST)
         //END_UNITY_CONTENT
     }
+    */
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, intent: Intent?) {
         super.onActivityResult(requestCode, resultCode, intent)

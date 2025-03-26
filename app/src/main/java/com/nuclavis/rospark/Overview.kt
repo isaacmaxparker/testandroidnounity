@@ -65,7 +65,7 @@ import com.nuclavis.rospark.databinding.OverviewProgressCardBinding
 import com.nuclavis.rospark.databinding.OverviewPromiseGardenCardBinding
 import com.nuclavis.rospark.databinding.OverviewWeeklyStrategyCardBinding
 import com.nuclavis.rospark.databinding.TopClassroomsRowBinding
-import com.unity3d.player.UnityPlayerActivity
+//import com.unity3d.player.UnityPlayerActivity
 import okhttp3.Call
 import okhttp3.Callback
 import okhttp3.FormBody
@@ -5089,7 +5089,12 @@ open class Overview : BaseActivity() {
         })
     }
 
+    fun loadGardenUnity() {}
+    fun loadLuminaryUnity() {}
+    fun loadJerseyUnity(bool: Boolean) {}
+    fun loadPhotoFiltersUnity() {}
 
+/*
     fun loadGardenUnity() {
         //BEGIN_GARDEN_UNITY_CONTENT
         isUnityLoaded = true
@@ -5153,7 +5158,7 @@ open class Overview : BaseActivity() {
         startActivityForResult(intent, UNITY_PHOTO_FILTERS_REQUEST)
         //END_PHOTO_FILTERS_UNITY_CONTENT
     }
-
+*/
     override fun onActivityResult(requestCode: Int, resultCode: Int, intent: Intent?) {
         super.onActivityResult(requestCode, resultCode, intent)
 
