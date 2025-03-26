@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<data>
+    <variable name="colorList" type="com.nuclavis.rospark.ColorList" />
+</data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_marginTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1000"
+                android:gravity="top|left"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:textColor="#000"
+                    android:layout_weight="1000"
+                    android:text="Cassidy Forbes"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:textColor="#000"
+                        android:layout_weight="1000"
+                        android:text="@string/mobile_manage_school_students_teacher"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:textColor="#000"
+                        android:layout_weight="1000"
+                        android:text="Shoop"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:textColor="#000"
+                        android:layout_weight="1000"
+                        android:text="@string/mobile_manage_school_students_grade"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:textColor="#000"
+                        android:layout_weight="1000"
+                        android:text="1st"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:textColor="#000"
+                        android:layout_weight="1000"
+                        android:text="@string/mobile_manage_school_students_amount_raised"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:textColor="#000"
+                        android:layout_weight="1000"
+                        android:text="$55"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/email_icon"
+                    android:tint="#000000"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:contentDescription="@string/mobile_manage_school_students_email_icon_voiceover"
+                    android:customImageTint="@{colorList.primaryColor}" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rounded_borders"
+                    android:customBackground="@{colorList.primaryColor}"
+                    android:gravity="center"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:contentDescription="@string/mobile_manage_school_students_donation_icon_voiceover"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        app:tint="#ffffff"
+                        android:gravity="center"
+                        android:tint="#ffffff"
+                        android:src="@drawable/donations" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:orientation="vertical">
+            
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:background="#000000"
+            android:customBackground="@{colorList.primaryColor}" />
+    </LinearLayout>
+</layout>

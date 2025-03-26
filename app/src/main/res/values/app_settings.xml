@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" type="string">Nuclavis Technologies</string>
+    <string name="client_code" type="string">alzheimerscom</string>
+    <string name="bundle_id" type="string">com.nuclavis.ntdev.stage</string>
+    <string name="base_server_url" type="string">https://stage.nuclavis.com</string>
+    <string name="multi_language_enabled" type="string">false</string>
+    <string name="container_app" type="string">false</string>
+    <string name="flower_garden_enabled" type="string">true</string>
+</resources>

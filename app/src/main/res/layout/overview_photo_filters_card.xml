@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<data>
+    <variable name="colorList" type="com.nuclavis.rospark.ColorList" />
+</data>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="10dp"
+    android:background="@{colorList.isWhite ? @drawable/card_background_white : @drawable/card_background}"
+    android:orientation="vertical">
+    <FrameLayout 
+        android:id="@+id/overview_photo_filters_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/photo_filters_view_container"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:padding="0dp">
+                <TextView
+                    style="@style/overview_card_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:padding="0dp"
+                    android:accessibilityHeading="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="@string/mobile_overview_photo_filters_title"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="left|top"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:weightSum="10">
+
+                <ImageView
+                    android:id="@+id/photo_filters_card_image"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/rotating_arrows_icon"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="@string/mobile_overview_photo_filters_description"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:weightSum="10">
+                <Button
+                    android:id="@+id/view_photo_filters_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="6"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/mobile_overview_photo_filters_button"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:customTextColor="@{colorList.buttonTextColor}"
+                    android:customBackgroundTintColor="@{colorList.buttonColor}" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+</layout>

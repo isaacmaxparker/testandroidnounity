@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "499049341498",
+    "project_id": "mobile-eb9b3",
+    "storage_bucket": "mobile-eb9b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499049341498:android:668373730c7e5951984b03",
+        "android_client_info": {
+          "package_name": "com.nuclavis.rospark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499049341498-b3h7kh2u1a494qocte3qt38ml7o2t8to.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nuclavis.rospark",
+            "certificate_hash": "091b21bec06c549788a7431b0811200f7669e593"
+          }
+        },
+        {
+          "client_id": "499049341498-qbgev3bc5fj013kb1r44b2om8upspglr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nuclavis.rospark",
+            "certificate_hash": "a869b5209db4e66344cfa03fcda25df0d1be25ef"
+          }
+        },
+        {
+          "client_id": "499049341498-sqj73q6ipuhfatf9gmippqc069foc33c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nuclavis.rospark",
+            "certificate_hash": "ea6daa3d078075ac3ab22fa439cfbb65a5ebf9e0"
+          }
+        },
+        {
+          "client_id": "499049341498-23vuplo6o34n1hb7heg14j300u6860st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyOdOUJSC4DvhYZr_UOGWmg2GuXqzzOSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499049341498-23vuplo6o34n1hb7heg14j300u6860st.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "499049341498-01efdu2kj3394epee2c30poot3r2f6p9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nuclavis.rosice"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

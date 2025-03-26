@@ -1,0 +1,33 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+include ':app'
+include ':unityLibrary'
+project(':unityLibrary').projectDir=new File('\\UnityProject\\unityLibrary')
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url = "https://artifactory.img.ly/artifactory/imgly" }
+        maven {
+            url = uri('https://maven.pkg.github.com/mitek-systems/misnap-android')
+            credentials {
+                username = System.getenv('PACKAGES_USERNAME')
+                password = System.getenv('PACKAGES_PASSWORD')
+            }
+        }
+        jcenter()
+        flatDir {
+            dirs "${project(':unityLibrary').projectDir}/libs"
+        }
+    }
+}
+rootProject.name = "NT Mobile Android"
